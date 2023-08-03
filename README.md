@@ -33,7 +33,7 @@ python3 enumbuddy.py -c "<NMAP_FLAG>" -t "<IP_OR_RANGE>"
 For example:
 
 ```bash
-python3 enumbuddy.py -c "-sS" -t "192.168.1.1"
+python3 enumbuddy.py -c "-sS" -t "192.168.x.x"
 ```
 
 ## Contributing
