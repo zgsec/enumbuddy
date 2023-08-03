@@ -1,0 +1,612 @@
+{
+    "21": {
+      "description": "FTP (File Transfer Protocol) - Used for transferring files over the network.",
+      "suggestions": [
+        "Suggest checking for anonymous login.",
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "23": {
+      "description": "Telnet - A communication protocol used for interacting with a device remotely.",
+      "suggestions": [
+        "Suggest trying to connect using a Telnet client to check for potential vulnerabilities or misconfigurations."
+      ]
+    },
+    "25": {
+      "description": "SMTP (Simple Mail Transfer Protocol) - Used for email routing between mail servers.",
+      "suggestions": [
+        "Suggest using a tool like smtp-user-enum to enumerate valid users.",
+        "Suggest using a tool like SWAKS to check for server vulnerabilities.",
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits."
+      ]
+    },
+    "53": {
+      "description": "DNS (Domain Name System) - Translates domain names to IP addresses.",
+      "suggestions": [
+        "Suggest using a tool like dnsrecon or dnsenum for DNS enumeration.",
+        "Suggest checking for zone transfer vulnerabilities."
+      ]
+    },
+    "69": {
+      "description": "TFTP (Trivial File Transfer Protocol) - A simple file transfer protocol, with no authentication.",
+      "suggestions": [
+        "Suggest using a TFTP client to check for anonymous read/write access.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "110": {
+      "description": "POP3 (Post Office Protocol version 3) - Used by local email clients to retrieve emails from a remote server.",
+      "suggestions": [
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "139": {
+      "description": "NetBIOS (Network Basic Input/Output System) - Provides services related to the session layer of the OSI model, allowing applications on separate computers to communicate over a local area network.",
+      "suggestions": [
+        "Suggest using nbtscan or enum4linux for NetBIOS enumeration.",
+        "If NetBIOS nameservice is detected, suggest checking for potential information disclosure."
+      ]
+    },
+    "143": {
+      "description": "IMAP (Internet Message Access Protocol) - Used by email clients to retrieve mail from a mail server.",
+      "suggestions": [
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "161": {
+      "description": "SNMP (Simple Network Management Protocol) - Used for managing devices on IP networks.",
+      "suggestions": [
+        "Suggest using SNMPwalk to check if community strings are publicly available.",
+        "If SNMPv1 or v2c is detected, suggest checking for community strings in plaintext."
+      ]
+    },
+    "445": {
+      "description": "SMB (Server Message Block) - A protocol for sharing files, printers, serial ports, and other resources over a network.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using SMB enumeration tools (e.g., enum4linux, smbmap).",
+        "Suggest checking for null sessions or misconfigured shares."
+      ]
+    },
+    "1521": {
+      "description": "Oracle - A multi-model database management system produced and marketed by Oracle Corporation.",
+      "suggestions": [
+        "Suggest trying to connect using an Oracle client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "2049": {
+      "description": "NFS (Network File System) - A distributed file system protocol that allows a user on a client computer to access files over a network in a manner similar to how local storage is accessed.",
+      "suggestions": [
+        "Suggest using showmount to enumerate exported file systems.",
+        "If the server allows mounts from any client, suggest checking for sensitive information in the file systems."
+      ]
+    },
+    "2082": {
+      "description": "cPanel - A web hosting control panel that provides a graphical interface and automation tools designed to simplify the process of hosting a web site.",
+      "suggestions": [
+        "Suggest checking for default credentials.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "2083": {
+      "description": "cPanel SSL - The SSL version of the cPanel service.",
+      "suggestions": [
+        "Suggest checking for default credentials.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "2181": {
+      "description": "Zookeeper - A centralized service for distributed systems to a hierarchical key-value store, which is used to provide distributed configuration service, synchronization service, and naming registry for large distributed systems.",
+      "suggestions": [
+        "Suggest trying to connect using a Zookeeper client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "3128": {
+      "description": "Squid Proxy - An open source proxy server and web cache daemon.",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "3268": {
+      "description": "LDAP (Lightweight Directory Access Protocol) Global Catalog - Used for logon processes and directory searches.",
+      "suggestions": [
+        "Suggest using a tool like ldapsearch for LDAP enumeration.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "3306": {
+      "description": "MySQL - An open-source relational database management system.",
+      "suggestions": [
+        "Suggest trying to connect using a MySQL client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "3307": {
+      "description": "MySQL (alternative) - An alternative port for MySQL.",
+      "suggestions": [
+        "Suggest trying to connect using a MySQL client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "3309": {
+      "description": "MySQL (alternative) - An alternative port for MySQL.",
+      "suggestions": [
+        "Suggest trying to connect using a MySQL client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "3386": {
+      "description": "MS WBT Server - A Microsoft remote desktop related service.",
+      "suggestions": [
+        "Suggest using a tool like xfreerdp or rdesktop to connect to the service.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Ncrack to attempt brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "3389": {
+      "description": "RDP (Remote Desktop Protocol) - A proprietary protocol developed by Microsoft, providing a graphical interface to connect to another computer over a network connection.",
+      "suggestions": [
+        "Suggest using a tool like xfreerdp or rdesktop to connect to the service.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Ncrack to attempt brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "4444": {
+      "description": "Metasploit RPC Server - Default listener port for the Metasploit Framework.",
+      "suggestions": [
+        "Suggest checking for default credentials or weak token management.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest checking for exposed sensitive API endpoints."
+      ]
+    },
+    "5060": {
+      "description": "SIP (Session Initiation Protocol) - Used for controlling multimedia communication sessions such as voice and video calls over Internet Protocol (IP).",
+      "suggestions": [
+        "Suggest using a tool like svmap for SIP enumeration.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "5432": {
+      "description": "PostgreSQL - An open-source relational database management system emphasizing extensibility and SQL compliance.",
+      "suggestions": [
+        "Suggest trying to connect using a PostgreSQL client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "5433": {
+      "description": "PostgreSQL (alternative) - An alternative port for PostgreSQL.",
+      "suggestions": [
+        "Suggest trying to connect using a PostgreSQL client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "5900": {
+      "description": "VNC (Virtual Network Computing) - Used for remote desktop access.",
+      "suggestions": [
+        "Suggest trying to connect using a VNC client to check for potential vulnerabilities or misconfigurations.",
+        "Suggest using a tool like vncviewer in listen mode to exploit potential reverse connections.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "5985": {
+      "description": "WinRM (Windows Remote Management) - Used for remote management of Windows machines.",
+      "suggestions": [
+        "Suggest trying to connect using a WinRM client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "5986": {
+      "description": "WinRM over HTTPS - The SSL version of the WinRM service.",
+      "suggestions": [
+        "Suggest trying to connect using a WinRM client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "6370": {
+      "description": "Unify Data Broker - A service related to Unify data solutions.",
+      "suggestions": [
+        "Suggest trying to connect using a Unify Data Broker client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "6379": {
+      "description": "Redis (Remote Dictionary Server) - An open-source in-memory data structure project implementing a distributed, in-memory key–value database with optional durability.",
+      "suggestions": [
+        "Suggest trying to connect using a Redis client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "7001": {
+      "description": "Oracle HTTP Server - A web server produced and marketed by Oracle Corporation.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8000": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8008": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE)."
+      ]
+    },
+    "8010": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8080": {
+      "description": "HTTP Proxy - Often used as a secondary or proxy HTTP port.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8083": {
+      "description": "Vestacp - A control panel for hosting, often run on this port.",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "8087": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8088": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8090": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8098": {
+      "description": "Riak CS - A cloud storage software that can be accessed over HTTP.",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "8100": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8181": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8443": {
+      "description": "HTTPS (alternative) - An alternative port for HTTPS.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "8888": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "9000": {
+      "description": "HTTP (alternative) - An alternative port for HTTP.",
+      "suggestions": [
+        "If version-specific vulnerabilities are known, suggest searching for potential exploits.",
+        "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+        "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+        "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+        "Suggest using a tool like Burp Suite to intercept and modify requests."
+      ]
+    },
+    "9001": {
+      "description": "Microsoft SharePoint authoring environment or Tor ORPort (Tor's default ORPort)",
+      "suggestions": [
+        "For SharePoint: Suggest checking for misconfigurations or use a SharePoint scanner tool for finding potential vulnerabilities.",
+        "For Tor ORPort: This port being open suggests Tor services are running. Be cautious with legal and ethical considerations."
+      ]
+    },
+    "9043": {
+      "description": "WebSphere Application Server Administration Console secure port",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "9060": {
+      "description": "WebSphere Application Server Administration Console",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "9080": {
+      "description": "glrpc, Groove Collaboration software GLRPC",
+      "suggestions": [
+        "Suggest trying to connect using a Groove client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9090": {
+      "description": "Webwasher, Secure Web, Dell OpenManage, Pichat Server (Peer-to-peer chat software server)",
+      "suggestions": [
+        "Suggest trying to connect using a client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9100": {
+      "description": "PDL Data Stream, used for printing to certain network printers",
+      "suggestions": [
+        "Suggest checking for potential information disclosure in printer responses.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9101": {
+      "description": "Bacula Director",
+      "suggestions": [
+        "Suggest trying to connect using a Bacula Director client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9102": {
+      "description": "Bacula File Daemon",
+      "suggestions": [
+        "Suggest trying to connect using a Bacula File Daemon client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9103": {
+      "description": "Bacula Storage Daemon",
+      "suggestions": [
+        "Suggest trying to connect using a Bacula Storage Daemon client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9119": {
+      "description": "MXit Instant Messenger",
+      "suggestions": [
+        "Suggest trying to connect using a MXit client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9200": {
+      "description": "Elasticsearch",
+      "suggestions": [
+        "Suggest trying to connect using an Elasticsearch client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9443": {
+      "description": "VMware Webservice HTTPS",
+      "suggestions": [
+        "Suggest checking for default login credentials.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9535": {
+      "description": "mngsuite, LANDesk Management Suite Remote Control",
+      "suggestions": [
+        "Suggest trying to connect using a LANDesk client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9800": {
+      "description": "WebDAV Source",
+      "suggestions": [
+        "Suggest trying to connect using a WebDAV client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "9999": {
+      "description": "Urchin Web Analytics",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "10000": {
+      "description": "Webmin - A web-based system configuration tool for Unix-like systems",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest using a tool like Hydra for brute-forcing if within the legal and ethical boundaries of your penetration test."
+      ]
+    },
+    "10001": {
+      "description": "SCP Config, sometimes used by Internet providers to update the firmware in cable modems",
+      "suggestions": [
+        "Suggest trying to connect using a SCP Config client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "10250": {
+      "description": "Kubernetes API Server - Used for cluster management.",
+      "suggestions": [
+        "Suggest checking for default credentials or weak token management.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest checking for exposed sensitive API endpoints."
+      ]
+    },
+    "10500": {
+      "description": "Polycom SoundStation IP 6000 VoIP phone default web interface",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits.",
+        "Suggest checking for default credentials."
+      ]
+    },
+    "11211": {
+      "description": "Memcached - A general-purpose distributed memory-caching system.",
+      "suggestions": [
+        "Suggest using a tool like memcstat to check for potential information disclosure.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "27017": {
+      "description": "MongoDB",
+      "suggestions": [
+        "Suggest trying to connect using a MongoDB client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "27018": {
+      "description": "MongoDB Shardserver",
+      "suggestions": [
+        "Suggest trying to connect using a MongoDB client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "27019": {
+      "description": "MongoDB Shardserver",
+      "suggestions": [
+        "Suggest trying to connect using a MongoDB client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "28017": {
+      "description": "MongoDB RESTful interface",
+      "suggestions": [
+        "Suggest trying to connect using a browser to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+    "51413": {
+      "description": "BitTorrent - A communication protocol for peer-to-peer file sharing (P2P) which is used to distribute data and electronic files over the Internet.",
+      "suggestions": [
+        "Suggest trying to connect using a BitTorrent client to check for potential vulnerabilities or misconfigurations.",
+        "If older versions are detected, suggest searching for potential exploits."
+      ]
+    },
+        "80": {
+            "description": "HTTP",
+            "suggestions": [
+                "Suggest using web vulnerability scanners (e.g., OWASP ZAP, Nikto).",
+                "Suggest using directory and file brute-forcing tools (e.g., gobuster, DirBuster).",
+                "Suggest checking for misconfigurations in HTTP methods (e.g., PUT, DELETE).",
+                "Suggest using a tool like Burp Suite to intercept and modify requests."
+            ]
+        },
+        "135": {
+            "description": "Microsoft RPC",
+            "suggestions": [
+                "Suggest using a tool like Rpcdump to enumerate RPC services.",
+                "Suggest checking for unprotected SAMBA shares.",
+                "Suggest using Nmap scripts for further enumeration (e.g., rpc-grind, rpcinfo)."
+            ]
+        },
+        "443": {
+            "description": "HTTPS",
+            "suggestions": [
+                "Suggest checking for SSL/TLS vulnerabilities using tools like testssl.sh or SSLyze.",
+                "Same suggestions as port 80, but also suggest checking for issues related to certificate validation."
+            ]
+        },
+        "631": {
+            "description": "Internet Printing Protocol",
+            "suggestions": [
+                "Suggest checking for open printers or misconfigured printers.",
+                "Suggest using a tool like PRET (Printer Exploitation Toolkit) for printer-related vulnerabilities."
+            ]
+        },
+        "2869": {
+            "description": "ICMP over SSL",
+            "suggestions": [
+                "Suggest checking for vulnerabilities related to SSL/TLS.",
+                "Suggest checking for misconfigurations or weak ciphers."
+            ]
+        },
+        "5033": {
+            "description": "TCP/IP NetBIOS Helper",
+            "suggestions": [
+                "Suggest checking for vulnerabilities related to NetBIOS.",
+                "Suggest using a tool like nbtscan or enum4linux for NetBIOS enumeration."
+            ]
+        }
+    }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
