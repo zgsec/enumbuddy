@@ -18,7 +18,7 @@ enum buddy is a Python tool that harnesses the power of Nmap for network scannin
 To install enum buddy, clone this repository:
 
 ```
-git clone https://github.com/<zgsec>/enumbuddy.git
+git clone https://github.com/zgsec/enumbuddy.git
 ```
 
 ## Usage
